@@ -6,6 +6,57 @@
 <title>Chapter 92</title>
 
 <style>
+
+.rainbow-text{
+    font-weight:bold;
+    font-size:15px;
+    text-align:center;
+
+    background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet,
+        red
+    );
+
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: rainbowMove 4s linear infinite;
+}
+
+@keyframes rainbowMove{
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
+
+.view-box{
+    text-align:center;
+    margin:6px 0;
+}
+
+/* Ẩn tooltip + chặn giữ lâu */
+.view-img{
+    height:16px;
+    width:auto;
+    vertical-align:middle;
+
+    pointer-events:none;   /* 🔥 chặn tooltip */
+    user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none; /* Android / iOS */
+}
+
 .to-top{
     position:fixed;
     right:16px;
@@ -120,6 +171,14 @@ img{
     </div>
 
     <div class="chapter">- Chapter 92 -</div>
+    
+        <div class="view-box">
+   <div class="rainbow-text">Lượt Xem</div>
+    <img class="view-img"
+         src="https://visitor-badge.laobi.icu/badge?page_id=chapter92&left_text=&left_color=00000000"
+         alt="">
+</div>
+    
     <div class="update">(Cập nhật: 2/1/2026)</div>
 
     <div class="tip">Dùng ← → để chuyển chapter</div>
